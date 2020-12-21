@@ -1,0 +1,41 @@
+.title{
+    background-color: aqua;
+    text-align: center;
+    border: solid 3px black;
+    margin: 0 auto
+}
+
+.nav{
+    border: solid 3px black;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 3px;
+    background-color: black;
+}.nav button{
+    border: solid 2px black;
+    padding: 3px;
+}.nav button:hover{
+    background-color: aqua;
+}
+
+.chapter-title{
+    background-color: aqua;
+    text-align: center;
+    border: solid 3px black;
+    margin: 0 auto;
+    width: 65%;
+    float: left;
+}
+
+.chapter{
+    background-color: black;
+    color: white;
+    width: 65%;
+}.chapter p{
+    text-indent: 15px;
+    margin: 0 auto;
+    padding: 3px;
+}
