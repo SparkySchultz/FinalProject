@@ -6,22 +6,25 @@
     <title>Sparky Schultz</title>
 </head>
 <body>
+
     <h1 class = "title">Sparky Schultz</h1>
     <div class = "nav">
-        <button id = "btnClk">About</button>
-        <button id = "btnClk2">Contact</button>
-        <button id = "btnClk3">Help</button>
+        <button id = "btnClk" onclick = "clicked()">About</button>
+        <button id = "btnClk2" onclick = "clicked2()">Contact</button>
+        <button id = "btnClk3" onclick = "clicked3()">Help</button>
         <script type = "text/javascript">
-            document.getElementById("btnClk").addEventListener("click", clicked);
             function clicked(){alert("I am currently a freshman at Umass-Boston. I am a computer science major. I grew up in York, Pa which is about an hour north of Baltimore, Md. I am a big fan of the city of Boston. My favorite sport is basketball, and my favorite professional team is the Boston Celtics.")}
-            document.getElementById("btnClk2").addEventListener("click", clicked2);
             function clicked2(){alert("Email: andrew.schultz001@umb.edu")}
-            document.getElementById("btnClk3").addEventListener("click", clicked3);
             function clicked3(){alert("Help")}
         </script>
     </div>
 
     <h2 class = "chapter-title">A Look Back At The Semester</h2>
+    
+    <div id = "picDiv">
+        <img id = "pic" class = "pic" src="andrew.JPG">
+    </div>
+
     <div class = "chapter">
         <p>Throughout the semester, I have learned new things from each of my various classes. </p>
         <p>In English, I learned tools to improve my writing. This was one of the most helpful classes because I will take this information with me for the rest of my life and use it in many facets of my life. </p>
@@ -30,5 +33,28 @@
         <p>The intro to computer programming was another brand new class. In high school, I took java and html classes, but I had never seen python before. The class was not only beneficial in teaching me python, but it also taught me some other basic programming lessons that I will take with me. </p>
         <p>My last class, Science Gateway Seminar, taught me a wide variety of topics, including AI, autonomous cars, and facial recognition. My knowledge was limited in these topics, and it helped open my eyes to the larger world of technology. </p>
     </div>
+
+    <div class = "picButtons" id = "picButtons">
+        <button id = "pic15" onclick = "clicked4()">Image 1</button>
+        <button id = "pic25" onclick = "clicked5()">Image 2</button>
+        <script type = "text/javascript">
+            function clicked4(){
+                document.getElementById("pic").remove();
+                var imageDiv = document.getElementById("picDiv");
+                var image = document.createElement("pic");
+                image.innerHTML = "<img id = 'pic' class = 'pic' src='andrew.JPG'>"
+                imageDiv.appendChild(image);
+            }
+        
+            function clicked5(){
+                document.getElementById("pic").remove();
+                var image = document.createElement("pic");
+                var imageDiv = document.getElementById("picDiv");
+                image.innerHTML = "<img id = 'pic' class = 'pic' src='family.JPG'>"
+                imageDiv.appendChild(image)
+            }
+        </script>
+    </div>
+
 </body>
 </html>

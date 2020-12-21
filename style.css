@@ -23,11 +23,18 @@
 
 .chapter-title{
     background-color: aqua;
-    text-align: center;
+    text-align: left;
     border: solid 3px black;
     margin: 0 auto;
-    width: 65%;
-    float: left;
+    width: 100%;
+}
+
+.pic{
+    width: 35%;
+    float: right;
+    margin: 0 auto;
+    border: solid 3px black;
+    height: 84%;
 }
 
 .chapter{
@@ -38,4 +45,22 @@
     text-indent: 15px;
     margin: 0 auto;
     padding: 3px;
+    font-size: x-large;
+}
+
+.picButtons{
+    background-color: aqua;
+    border: solid 3px black;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 56px
+}.picButtons button:hover{
+    background-color: black;
+    color: white;
+}.picButtons button{
+    border: solid 3px black;
+    padding: 5px;
+    font-size: medium;
 }
